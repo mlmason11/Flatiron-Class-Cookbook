@@ -1,0 +1,141 @@
+/*---------------------   CSS RESET ------------------------*/
+
+* {
+    padding: .5rem;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid orange; */
+    
+}
+
+/*--------------------  REUSABLE CLASSES  -------------------*/
+
+/*---- alignment ----*/
+.left   {text-align: left}
+.center {text-align: center}
+.right  {text-align: right}
+
+
+/* ---- padding -----*/
+.p   { padding: .5rem }
+.p-1 { padding: 1rem }
+.p-2 { padding: 2rem }
+.p-3 { padding: 3rem }
+.p-4 { padding: 4rem }
+.p-8   {padding: 8rem;}
+.padded-lg  {padding: 10%;}
+
+/* ----  margin ----*/
+.m   { padding: .5rem }
+.m-1 { padding: 1rem }
+.m-2 { padding: 2rem }
+.m-3 { padding: 3rem }
+.m-4 { padding: 4rem }
+.margin-bottom-0 { margin-bottom: 0 }
+
+
+
+/* ---- viewport height ----*/
+.tall-50 { min-height: 50vh}
+.tall-60 { min-height: 60vh}
+.tall-70 { min-height: 70vh}
+.tall-80 { min-height: 80vh}
+.tall-90 { min-height: 90vh}
+
+
+/* ----  color selectors  ----*/
+.bg-featured { background-color: #1c2A2C}
+.bg-dark     { background-color: #24282B}
+.light-text  { color: white;}
+
+
+/* ----  Tex transform  ----*/
+.upper { text-transform: uppercase }
+
+
+
+/*--------------------  CLASS SELECTORS   -------------------*/
+
+.logo {
+    width:200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------  TYPOGRAPHY STYLES -------------------*/
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(51, 51, 51);
+    padding: 4rem;
+}
+
+header nav {
+    border-bottom:  1px solid grey;
+    line-height: .5px;
+}
+
+
+footer h1 {
+    border-top:  1px solid grey;
+    line-height: .5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    padding: 1rem;
+    display: inline-block;
+    font-size: 15px;
+    
+}
+
+a:hover { 
+    color: goldenrod; 
+    cursor: pointer;
+    font-size: 14.5px;
+    transition: all .1s;
+}
+
+
+header h1 {
+    font-family: 'Lexand', serif;
+    font-weight: 300;
+    text-align: center; 
+    font-size: 4rem;  
+    padding: 2rem 1rem 5rem  3rem;
+    vertical-align: center;
+
+}
+
+footer h1 {
+    font-family: 'Lexand', serif;
+    font-weight: 300; 
+    padding: 2rem 1rem;
+    vertical-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Lexand', serif;
+    font-weight: 200;
+    padding: 2rem;   
+}
+
+h3 {
+    font-family: 'Lexand', serif;
+    font-weight: 200;
+    padding: 2rem;   
+}
+
+
+p {
+    padding:2rem;
+}
+
+
+
+
+/*------------------ MEDIA QUERIES ---------------------*/
