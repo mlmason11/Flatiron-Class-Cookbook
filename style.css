@@ -17,23 +17,23 @@
 
 
 /* ---- padding -----*/
-.p   { padding: .5rem }
-.p-1 { padding: 1rem }
-.p-2 { padding: 2rem }
-.p-3 { padding: 3rem }
-.p-4 { padding: 4rem }
-.p-8   {padding: 8rem;}
+.p-none { padding: 0}
+.p      { padding: .5rem }
+.p-1    { padding: 1rem }
+.p-2    { padding: 2rem }
+.p-3    { padding: 3rem }
+.p-4    { padding: 4rem }
+.p-8    {padding: 8rem;}
 .padded-lg  {padding: 10%;}
 
 /* ----  margin ----*/
+.m-none { padding: 0}
 .m   { padding: .5rem }
 .m-1 { padding: 1rem }
 .m-2 { padding: 2rem }
 .m-3 { padding: 3rem }
 .m-4 { padding: 4rem }
 .margin-bottom-0 { margin-bottom: 0 }
-
-
 
 /* ---- viewport height ----*/
 .tall-50 { min-height: 50vh}
@@ -51,17 +51,42 @@
 
 /* ----  Tex transform  ----*/
 .upper { text-transform: uppercase }
+.lower { text-transform: lowercase }
+
 
 
 
 /*--------------------  CLASS SELECTORS   -------------------*/
+.logo-parent {
+    position: relative;
+    top: 0;
+    left: 100;
+  }
 
 .logo {
-    width:200px;
+    width:400px;
     display:block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    bottom: 50;
+    left: 0;  
 }
+
+.med {
+    font-size: 1.5rem;
+}
+
+.nav-a {
+    font-size: 15px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: -20;
+    left: 0; 
+}
+
 
 /*--------------------  TYPOGRAPHY STYLES -------------------*/
 
@@ -71,26 +96,31 @@ body {
     padding: 4rem;
 }
 
+
 header nav {
-    border-bottom:  1px solid grey;
+    border-bottom:  1px solid rgba(34, 36, 8, 0.301);
     line-height: .5px;
-}
 
-
-footer h1 {
-    border-top:  1px solid grey;
-    line-height: .5px;
 }
 
 nav a {
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
-    padding: 1rem;
     display: inline-block;
-    font-size: 15px;
-    
+
 }
+
+nav .div-container {
+    padding: 0;
+    margin: 0;
+
+}
+
+#align {
+    align-items: center;
+}
+
 
 a:hover { 
     color: goldenrod; 
@@ -105,9 +135,20 @@ header h1 {
     font-weight: 300;
     text-align: center; 
     font-size: 4rem;  
-    padding: 2rem 1rem 5rem  3rem;
+    padding: 0;
     vertical-align: center;
+    color: rgba(34, 36, 8, 0.84);
+    
+}
 
+header h2 {
+    font-family: 'Montserrat', serif;
+    font-style: italic;
+    text-align: center; 
+    font-size: 12px;  
+    padding: 0;
+    vertical-align: center;
+    
 }
 
 footer h1 {
@@ -116,7 +157,14 @@ footer h1 {
     padding: 2rem 1rem;
     vertical-align: center;
     font-size: 2rem;
+    color: rgba(34, 36, 8, 0.84);
 }
+
+footer {
+    border-top:  1px solid rgba(34, 36, 8, 0.301);
+    line-height: .5px;
+}
+
 
 h2 {
     font-family: 'Lexand', serif;
