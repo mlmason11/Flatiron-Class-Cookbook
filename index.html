@@ -8,6 +8,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 
+        <!-- IMPORTED FONT (font-family: 'Montserrat' : 100, 200, 300) + italic -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+
 
         <!-- IMPORTED FONT (font-family: 'Lexand':100,200, 300, 400) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +22,10 @@
 
          <!-- GRIDLEX (formats page by implementing class = "grid" on parent container and class = "col-( # value 1-12)") on children  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+        <!-- FONT AWESOME ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
+
         
         <!-- STYLESHEET -->
         <link rel="stylesheet" href="./style.css"/>
@@ -24,14 +34,32 @@
     
     <body>
         <!-- heading section -->
-        <header>
-                <h1 > Our Food Blog 
+        <header >
+                <h1> Flatiron 
+                    <h2 class = "logo-parent"> a recipe guide for foodies </h2>
                     <img class='logo' src = "assets/logo.jpg"/>
                 </h1>
-                <nav> 
-                    <a href="#"> Home </a>
-                    <a href="#"> About </a>
-                    <a href="#"> Recipes </a>
+
+                <nav class = "grid">
+                    <div class = "col-6 div-container nav-a">
+                        <a href="#" > Home </a>
+                        <a href="#"> About </a>
+                        <a href="#"> Recipes </a>
+                    </div> 
+
+
+                    <div class = "col-6 right med div-container" >
+                        <a href = "#"> 
+                            <i class="fa-brands fa-instagram" style="color: #474b11;"></i>
+                        </a>
+                        <a href = "#">
+                            <i class="fa-brands fa-facebook-f" style="color: #474b11;"></i>
+                        </a>
+                        <a href = "#">
+                            <i class="fa-brands fa-youtube" style="color: #474b11;"></i>    
+                        </a>
+                    </div>
+ 
                 </nav>
 
             </div>
