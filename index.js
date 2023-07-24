@@ -20,8 +20,8 @@ let currentCategory
 
 // global constants
 const listParent = document.getElementById('list-parent')
-const commentForm = document.querySelector('#comment-form')
-const commentContainer = document.querySelector("#comment-container")
+const commentForm = document.getElementById('comment-form')
+const commentContainer = document.getElementById("comment-container")
 const title = document.getElementById('title')
 const detailImage = document.getElementById('detail-image')
 const description = document.getElementById('description')
@@ -29,6 +29,7 @@ const ingredients = document.getElementById('ingredients')
 const instructions = document.getElementById('instructions')
 const allergens = document.getElementById('allergens')
 const rating = document.getElementById('rating')
+const featuredImage = document.getElementById('featured-image')
 
 // optiona container 
 
@@ -43,7 +44,6 @@ commentForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('clicked')
     
-    // 
     if (e.target.value != "") {
 
 
