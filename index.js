@@ -47,20 +47,19 @@ commentForm.addEventListener('submit', (e) => {
     if (e.target.value != "") {
 
 
-        // fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
-        //     'method': "POST",
-        //     'header': {
-        //         'Accept': 'applications/json',
-        //         'Content-Type': 'applications/json'
-        //     },
-        //     'body': JSON.stringify({
-        //         'comment': e.target.value
-        //     })   
-        // }).then(response => response.json())
-        // .then(data => console.log(data))
-        // .catch(error => alert(error))
+        fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
+            'method': "POST",
+            'header': {
+                'Accept': 'applications/json',
+                'Content-Type': 'applications/json'
+            },
+            'body': JSON.stringify({
+                'comment': e.target.value
+            })   
+        }).then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => alert(error))
 
-        // 
 
         const parentBlock = document.createElement('div')
         parentBlock.className = "parent-block"
