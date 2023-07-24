@@ -20,8 +20,8 @@ let currentCategory
 
 // global constants
 const listParent = document.getElementById('list-parent')
-const commentForm = document.querySelector('#comment-form')
-const commentContainer = document.querySelector("#comment-container")
+const commentForm = document.getElementById('comment-form')
+const commentContainer = document.getElementById("comment-container")
 const title = document.getElementById('title')
 const detailImage = document.getElementById('detail-image')
 const description = document.getElementById('description')
@@ -31,7 +31,8 @@ const allergens = document.getElementById('allergens')
 const rating = document.getElementById('rating')
 const ratingForm = document.getElementById('rating-form')
 const stars = document.getElementById('stars')
-//const stars 
+const featuredImage = document.getElementById('featured-image')
+const categoryMenu = document.getElementById('category-menu')
 
 // optiona container 
 
@@ -73,7 +74,6 @@ commentForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('clicked')
     
-    // 
     if (e.target.value != "") {
 
 
@@ -188,8 +188,23 @@ function addOneRecipe(recipeObj) {
     listParent.append(recipeItem)    
 }
 
-fetch(`http://localhost:3000/recipes`)
-.then(response => response.json())
-.then(recipeArray => {
-    recipeArray.forEach(recipeObj => addOneRecipe(recipeObj))
-}).catch(error => alert(error))
+// fetch(`http://localhost:3000/recipes`)
+// .then(response => response.json())
+// .then(recipeArray => {
+//     recipeArray.forEach(recipeObj => addOneRecipe(recipeObj))
+// }).catch(error => alert(error))
+
+categoryMenu.addEventListener ('change', e => {
+    currentCategory = e.target.value
+    listParent.innerHTML=""
+    fetch(`http://localhost:3000/recipes`)
+    .then(response => response.json())
+    .then(recipeArray => {
+        
+        recipeArray.forEach(recipeObj => {
+            if (recipeObj.category === currentCategory) {
+                addOneRecipe(recipeObj)
+            }
+        })
+    }).catch(error => alert(error))
+})
