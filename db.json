@@ -2,15 +2,15 @@
     "recipes": [
         {
             "id": 1,
-            "name": "firstrecipe",
-            "image": "image_url",
+            "name": "French Omelette",
+            "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/12/9/0/FNK_French-Omelet_s4x3.jpg.rend.hgtvcom.826.620.suffix/1386784369204.jpeg",
             "description": "description",
             "ingredients": "ingredient_list",
             "allergens": "alergen_list",
             "steps": "steps_list",
             "cooktime": 1,
             "servings": 1,
-            "category": "breatfast",
+            "category": "breakfast",
             "rating": 0,
             "comment": ""
         },
