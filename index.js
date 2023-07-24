@@ -106,6 +106,14 @@ commentForm.addEventListener('submit', (e) => {
 // Populates the recipe card with the details of the clicked recipe
 // Takes in a recipe object and uses its data to fill in the card
 function populateDetails(recipeObj) {
+    title.innerHTML=''
+    detailImage.innerHTML=''
+    description.innerHTML=''
+    ingredients.innerHTML=''
+    instructions.innerHTML=''
+    allergens.innerHTML=''
+    rating.innerHTML=''
+    
     currentRecipe = recipeObj
 
     const recipeName = document.createElement('h1')
@@ -143,13 +151,6 @@ function addOneRecipe(recipeObj) {
     recipeItem.textContent = recipeObj.name
     recipeItem.addEventListener('click', e => {
         e.preventDefault()
-        title.innerHTML=''
-        detailImage.innerHTML=''
-        description.innerHTML=''
-        ingredients.innerHTML=''
-        instructions.innerHTML=''
-        allergens.innerHTML=''
-        rating.innerHTML=''
         populateDetails(recipeObj)
     })
     listParent.append(recipeItem)    
