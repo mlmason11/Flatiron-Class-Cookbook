@@ -21,7 +21,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400&display=swap" rel="stylesheet">
 
          <!-- GRIDLEX (formats page by implementing class = "grid" on parent container and class = "col-( # value 1-12)") on children  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" integrity="sha512-mcltC6QZExHxnvuAZy/ESE5S7OCdAx8lkkBBGjUKDqdtCLraHJqMuTGl11tffoyInmG92Fhn+MJvEKavBVZ6eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- FONT AWESOME ICONS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
@@ -37,7 +37,7 @@
         <header >
                 <h1> Flatiron 
                     <h2 class = "logo-parent"> a recipe guide for foodies </h2>
-                    <img class='logo' src = "assets/logo.jpg"/>
+                    <img class='logo' src = "assets/stock_images/logo.jpg"/>
                 </h1>
 
                 <nav class = "grid">
@@ -46,8 +46,6 @@
                         <a href="#"> About </a>
                         <a href="#"> Recipes </a>
                     </div> 
-
-
                     <div class = "col-6 right med div-container" >
                         <a href = "#"> 
                             <i class="fa-brands fa-instagram" style="color: #474b11;"></i>
@@ -56,7 +54,8 @@
                             <i class="fa-brands fa-facebook-f" style="color: #474b11;"></i>
                         </a>
                         <a href = "#">
-                            <i class="fa-brands fa-youtube" style="color: #474b11;"></i>    
+                            <i class="fa-brands fa-youtube" style="color: #474b11;"></i>  
+                        
                         </a>
                     </div>
  
@@ -82,12 +81,40 @@
                 <!-- serving count -->
             <!-- end receipe card -->
 
-            <!--  COMMENTS SECTION  -->
-                <!-- submition form -->
-                    <!-- stored comments -->
-            <!-- end comments section -->
 
-        <!-- end information section -->
+
+
+
+
+
+            <!--  COMMENTS SECTION  -->
+            <!-- stored comments -->
+    <!-- end comments section -->
+        <section id="comment-block" class="tall-70 p grid">
+            <div id="featured-image" class="col-6 bg-image"></div>
+            <div id="comments" class="col-6">
+                <div id="comment-heading" class="center">
+                    <h1> ADD COMMENTS SECTION</h1>
+                </div>
+                    <div id="comment-container" class="comment-container scroll">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- submition form -->
+    <section>
+        <div id= "comment-box" class ="comment-box">
+            <h5> Leave Us A Comment </h5>
+            <form id= "comment-form" class="comment-form">
+
+                <input id="new-name"  type="text" placeholder="name...">
+                <textarea id="new-comment" rows="10" placeholder="leave a comment..."></textarea>
+
+                <button type="submit" class="upper form-button"> Submit</button>
+            </form>
+        </div>
+    </section>
 
         <!-- footer section -->
         <footer>
@@ -100,6 +127,8 @@
         </footer>
     </body>
 </html>
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cupiditate sunt. Reiciendis, exercitationem. Odit distinctio rerum cupiditate repellendus culpa aspernatur quaerat facilis aliquid, sint magni suscipit voluptatum modi hic eligendi.
 
 
 
