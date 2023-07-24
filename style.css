@@ -49,14 +49,12 @@
 .bg-dark     { background-color: #24282B}
 .light-text  { color: white;}
 
-
 /* ----  Tex transform  ----*/
 .upper { text-transform: uppercase }
 .lower { text-transform: lowercase }
 
-
-
 /*--------------------  CLASS SELECTORS   -------------------*/
+
 .logo-parent {
     position: relative;
     top: 0;
@@ -235,10 +233,7 @@ p {
 }
 
 
-
-
 /*------------------ bg.image ---------------------*/
-
 
 .bg-image {
  
@@ -259,5 +254,5 @@ div.scroll {
     overflow-x: hidden;
     overflow-y: auto;
     text-align: left;
- 
   }
+

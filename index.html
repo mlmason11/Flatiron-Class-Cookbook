@@ -2,14 +2,12 @@
     <head>
         <title>Flatiron School Class Cookbook</title>
 
-
         <!-- IMPORTED FONT (font-family: 'Cormorant Garamond' : 300,  400) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
 
         <!-- IMPORTED FONT (font-family: 'Montserrat' : 100, 200, 300) + italic -->
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
@@ -26,7 +24,7 @@
         <!-- FONT AWESOME ICONS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
 
-        
+
         <!-- STYLESHEET -->
         <link rel="stylesheet" href="./style.css"/>
         <script defer src="./index.js"></script>
@@ -64,25 +62,50 @@
             </div>
         </header>
 
-        <!-- information section -->
+        <section id="options-container">
 
-            <!--  MEAL OPTIONS DIV  -->
-                <!-- meal type drop down -->
-                <!-- receipe list -->
-            <!-- end meal options -->
+            <div id="list-options-div">
+                <select id="category" alt="Select a Meal">
+                    <option id="breakfast">BRAEKFAST</option>
+                    <option id="lunch">LUNCH</option>
+                    <option id="dinner">DINNER</option>
+                </select>
+            </div>
 
-            <!--  RECIPE CARD   -->
-                <!-- image -->
-                <!-- description -->
-                <!-- ingredients -->
-                <!-- steps -->
-                <!-- allergens -->
-                <!-- cooktime -->
-                <!-- serving count -->
-            <!-- end receipe card -->
+            <div id="recipe-list">
+                <ul id="list-parent">
+                </ul>
+            </div>
+            
+        </section>
 
+        <section id="recipe-card">
+            <div id="title">
 
+            </div>
 
+            <div id="detail-image">
+
+            </div>
+
+            <div id="recipe-info">
+                <div id="description">
+
+                </div>
+                <div id="ingredients">
+
+                </div>
+                <div id="instructions">
+
+                </div>
+                <div id="allergens">
+
+                </div>
+                <div id="rating">
+
+                </div>
+            </div>
+        </section>
 
 
 
@@ -94,7 +117,7 @@
             <div id="featured-image" class="col-6 bg-image"></div>
             <div id="comments" class="col-6">
                 <div id="comment-heading" class="center">
-                    <h1> ADD COMMENTS SECTION</h1>
+                    <h1>ADD COMMENTS SECTION</h1>
                 </div>
                     <div id="comment-container" class="comment-container scroll">
                     </div>
