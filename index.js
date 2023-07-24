@@ -30,6 +30,7 @@ const instructions = document.getElementById('instructions')
 const allergens = document.getElementById('allergens')
 const rating = document.getElementById('rating')
 const featuredImage = document.getElementById('featured-image')
+const categoryMenu = document.getElementById('category-menu')
 
 // optiona container 
 
@@ -155,8 +156,23 @@ function addOneRecipe(recipeObj) {
     listParent.append(recipeItem)    
 }
 
-fetch(`http://localhost:3000/recipes`)
-.then(response => response.json())
-.then(recipeArray => {
-    recipeArray.forEach(recipeObj => addOneRecipe(recipeObj))
-}).catch(error => alert(error))
+// fetch(`http://localhost:3000/recipes`)
+// .then(response => response.json())
+// .then(recipeArray => {
+//     recipeArray.forEach(recipeObj => addOneRecipe(recipeObj))
+// }).catch(error => alert(error))
+
+categoryMenu.addEventListener ('change', e => {
+    currentCategory = e.target.value
+    listParent.innerHTML=""
+    fetch(`http://localhost:3000/recipes`)
+    .then(response => response.json())
+    .then(recipeArray => {
+        
+        recipeArray.forEach(recipeObj => {
+            if (recipeObj.category === currentCategory) {
+                addOneRecipe(recipeObj)
+            }
+        })
+    }).catch(error => alert(error))
+})
