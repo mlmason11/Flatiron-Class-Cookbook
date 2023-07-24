@@ -53,6 +53,7 @@
 .upper { text-transform: uppercase }
 .lower { text-transform: lowercase }
 
+
 /*--------------------  CLASS SELECTORS   -------------------*/
 
 .logo-parent {
@@ -254,5 +255,4 @@ div.scroll {
     overflow-x: hidden;
     overflow-y: auto;
     text-align: left;
-  }
-
+}
