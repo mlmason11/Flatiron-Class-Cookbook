@@ -11,7 +11,8 @@
             "cooktime": 1,
             "servings": 1,
             "category": "breakfast",
-            "rating": 0,
+            "ratings": 0,
+            "stars": 0,
             "comment": ""
         },
         {
@@ -26,7 +27,8 @@
             "cooktime": 20,
             "servings": 1,
             "category": "lunch",
-            "rating": 0,
+            "ratings": 0,
+            "stars": 0,
             "comment": ""
         },
         {
@@ -41,7 +43,8 @@
             "cooktime": 30,
             "servings": 4,
             "category": "dinner",
-            "rating": 0,
+            "ratings": 0,
+            "stars": 0,
             "comment": ""
         }
     ]
