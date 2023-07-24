@@ -1,36 +1,155 @@
 <html>
     <head>
         <title>Flatiron School Class Cookbook</title>
+        
+        <!-- IMPORTED FONT (font-family: 'Cormorant Garamond' : 300,  400) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+
+        <!-- IMPORTED FONT (font-family: 'Montserrat' : 100, 200, 300) + italic -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+
+        <!-- IMPORTED FONT (font-family: 'Lexand':100,200, 300, 400) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+         <!-- GRIDLEX (formats page by implementing class = "grid" on parent container and class = "col-( # value 1-12)") on children  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" integrity="sha512-mcltC6QZExHxnvuAZy/ESE5S7OCdAx8lkkBBGjUKDqdtCLraHJqMuTGl11tffoyInmG92Fhn+MJvEKavBVZ6eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- FONT AWESOME ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
+
+        <!-- STYLESHEET -->
         <link rel="stylesheet" href="./style.css"/>
         <script defer src="./index.js"></script>
     </head>
+    
     <body>
         <!-- heading section -->
+        <header >
+                <h1> Flatiron 
+                    <h2 class = "logo-parent"> a recipe guide for foodies </h2>
+                    <img class='logo' src = "assets/stock_images/logo.jpg"/>
+                </h1>
 
-        <!-- information section -->
+                <nav class = "grid">
+                    <div class = "col-6 div-container nav-a">
+                        <a href="#" > Home </a>
+                        <a href="#"> About </a>
+                        <a href="#"> Recipes </a>
+                    </div> 
+                    <div class = "col-6 right med div-container" >
+                        <a href = "#"> 
+                            <i class="fa-brands fa-instagram" style="color: #474b11;"></i>
+                        </a>
+                        <a href = "#">
+                            <i class="fa-brands fa-facebook-f" style="color: #474b11;"></i>
+                        </a>
+                        <a href = "#">
+                            <i class="fa-brands fa-youtube" style="color: #474b11;"></i>  
+                        
+                        </a>
+                    </div>
+ 
+                </nav>
 
-            <!-- meal options div -->
-                <!-- meal type drop down -->
-                <!-- receipe list -->
-            <!-- end meal options -->
+            </div>
+        </header>
 
-            <!-- recipe card -->
-                <!-- image -->
-                <!-- description -->
-                <!-- ingredients -->
-                <!-- steps -->
-                <!-- allergens -->
-                <!-- cooktime -->
-                <!-- serving count -->
-            <!-- end receipe card -->
+        <section id="options-container">
 
-            <!-- comments section -->
+            <div id="list-options-div">
+                <select id="category" alt="Select a Meal">
+                    <option id="breakfast">BRAEKFAST</option>
+                    <option id="lunch">LUNCH</option>
+                    <option id="dinner">DINNER</option>
+                </select>
+            </div>
+
+            <div id="recipe-list">
+                <ul id="list-parent">
+                </ul>
+            </div>
+            
+        </section>
+
+        <section id="recipe-card">
+            <div id="title">
+
+            </div>
+
+            <div id="detail-image">
+
+            </div>
+
+            <div id="recipe-info">
+                <div id="description">
+
+                </div>
+                <div id="ingredients">
+
+                </div>
+                <div id="instructions">
+
+                </div>
+                <div id="allergens">
+
+                </div>
+                <div id="rating">
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+            <!--  COMMENTS SECTION  -->
+            <!-- stored comments -->
+    <!-- end comments section -->
+        <section id="comment-block" class="tall-70 p grid">
+            <div id="featured-image" class="col-6 bg-image"></div>
+            <div id="comments" class="col-6">
+                <div id="comment-heading" class="center">
+                    <h1>ADD COMMENTS SECTION</h1>
+                </div>
+                    <div id="comment-container" class="comment-container scroll">
+                    </div>
+                </div>
+            </div>
+        </section>
+
                 <!-- submition form -->
-                    <!-- stored comments -->
-            <!-- end comments section -->
+    <section>
+        <div id= "comment-box" class ="comment-box">
+            <h5> Leave Us A Comment </h5>
+            <form id= "comment-form" class="comment-form">
 
-        <!-- end information section -->
+                <input id="new-name"  type="text" placeholder="name...">
+                <textarea id="new-comment" rows="10" placeholder="leave a comment..."></textarea>
+
+                <button type="submit" class="upper form-button"> Submit</button>
+            </form>
+        </div>
+    </section>
 
         <!-- footer section -->
+        <footer>
+            <h1> Our Food Blog </h1>
+            <nav> 
+                <a href="#"> Home </a>
+                <a href="#"> About </a>
+                <a href="#"> Recipes </a>
+            </nav>
+        </footer>
     </body>
 </html>
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, cupiditate sunt. Reiciendis, exercitationem. Odit distinctio rerum cupiditate repellendus culpa aspernatur quaerat facilis aliquid, sint magni suscipit voluptatum modi hic eligendi.
+
+
+

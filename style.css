@@ -1,0 +1,269 @@
+
+/*---------------------   CSS RESET ------------------------*/
+
+* {
+    padding: .5rem;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid orange; */
+    
+}
+
+/*--------------------  REUSABLE CLASSES  -------------------*/
+
+/*---- alignment ----*/
+.left   {text-align: left}
+.center {text-align: center}
+.right  {text-align: right}
+
+
+/* ---- padding -----*/
+.p-none { padding: 0}
+.p      { padding: .5rem }
+.p-1    { padding: 1rem }
+.p-2    { padding: 2rem }
+.p-3    { padding: 3rem }
+.p-4    { padding: 4rem }
+.p-8    {padding: 8rem;}
+.padded-lg  {padding: 10%;}
+
+/* ----  margin ----*/
+.m-none { padding: 0}
+.m   { padding: .5rem }
+.m-1 { padding: 1rem }
+.m-2 { padding: 2rem }
+.m-3 { padding: 3rem }
+.m-4 { padding: 4rem }
+.margin-bottom-0 { margin-bottom: 0 }
+
+/* ---- viewport height ----*/
+.tall-50 { min-height: 50vh}
+.tall-60 { min-height: 60vh}
+.tall-70 { min-height: 70vh}
+.tall-80 { min-height: 80vh}
+.tall-90 { min-height: 90vh}
+.tall-100 { min-height: 100vh}
+
+
+/* ----  color selectors  ----*/
+/*
+.bg-featured { background-color: #1c2A2C}
+.bg-dark     { background-color: #24282B}
+.light-text  { color: white;}
+*/
+
+
+/* ----  Tex transform  ----*/
+/*
+.upper { text-transform: uppercase }
+.lower { text-transform: lowercase }
+*/
+
+
+/*--------------------  CLASS SELECTORS   -------------------*/
+/*
+.logo-parent {
+    position: relative;
+    top: 0;
+    left: 100;
+  }
+
+.logo {
+    width:400px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 50;
+    left: 0;  
+}
+
+.med {
+    font-size: 1.5rem;
+}
+
+.nav-a {
+    font-size: 15px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: -20;
+    left: 0; 
+}
+
+.form-button {
+    height: 2rem;
+    border: none;
+    border-radius: 4rem;
+    width: 5rem;
+    background-color:#1c2A2C;color: white;
+    font-family: 'Cormorant Garamond';
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+.comment-box {
+    width: 50%;
+    /* border: 1px solid rgba(34, 36, 8, 0.301); */
+    margin:  50px  0;
+    padding: 10px 20px;
+    box-shadow: 0px, 1px, 10px, 1px rgb(34, 36, 8,);
+    font-family: 'Lexand';
+    border-radius: 2rem;
+    margin-left: 25%;
+    margin-top:80px;
+
+}
+
+.comment-box p{
+    text-align: left;
+    font-size:28px;
+    color: rgba(34, 36, 8, 0.301);
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 12px;
+    border: 1px solid rgba(34, 36, 8, 0.301);
+    color: rgb(51, 51, 51);
+    font-family: 'Lexand'
+
+}
+*/
+/*--------------------  TYPOGRAPHY STYLES -------------------*/
+/*
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(51, 51, 51);
+    padding: 4rem;
+}
+
+
+header nav {
+    border-bottom:  1px solid rgba(34, 36, 8, 0.301);
+    line-height: .5px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    display: inline-block;
+
+}
+
+nav .div-container {
+    padding: 0;
+    margin: 0;
+
+}
+
+#align {
+    align-items: center;
+}
+
+
+a:hover { 
+    color: goldenrod; 
+    cursor: pointer;
+    font-size: 14.5px;
+    transition: all .1s;
+}
+
+
+header h1 {
+    font-family: 'Lexand', serif;
+    font-weight: 300;
+    text-align: center; 
+    font-size: 4rem;  
+    padding: 0;
+    vertical-align: center;
+    color: rgba(34, 36, 8, 0.84);
+    
+}
+
+header h2 {
+    font-family: 'Montserrat', serif;
+    font-style: italic;
+    text-align: center; 
+    font-size: 12px;  
+    padding: 0;
+    vertical-align: center;
+    
+}
+
+footer h1 {
+    font-family: 'Lexand', serif;
+    font-weight: 300; 
+    padding: 2rem 1rem;
+    vertical-align: center;
+    font-size: 2rem;
+    color: rgba(34, 36, 8, 0.84);
+}
+
+footer {
+    border-top:  1px solid rgba(34, 36, 8, 0.301);
+    line-height: .5px;
+}
+
+
+h2 {
+    font-family: 'Lexand', serif;
+    font-weight: 200;
+    padding: 2rem;   
+}
+
+h3 {
+    font-family: 'Lexand', serif;
+    font-weight: 200;
+    padding: 2rem;   
+}
+
+h5 {
+    font-family: 'Lexand', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    /* padding: 2rem;  */
+    text-align: center;  
+}
+
+
+
+p {
+    padding:1rem;
+}
+*/
+
+
+
+/*------------------ bg.image ---------------------*/
+
+/*
+.bg-image {
+ 
+    background-size: 80%;
+    background-position: 0px -34px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image: url(https://64.media.tumblr.com/819159861ff597ceab1f3c4e0243a34e/tumblr_pogh29NBpl1vw7ucoo1_1280.jpg)
+    
+}
+
+
+
+div.scroll {
+    background-color: rgba(197, 190, 146, 0.101);
+    width: 600px;
+    height: 26rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+ 
+  }
+  */
