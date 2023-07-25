@@ -1,7 +1,7 @@
 /*---------------------   CSS RESET ------------------------*/
 
 * {
-    padding: .5rem;
+    padding: 2rem;
     margin: 0;
     box-sizing: border-box;
     /* border: 1px solid orange; */
@@ -82,19 +82,42 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    bottom: -20;
+    bottom: -80;
     left: 0; 
 }
 
+.social-icons {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: -80;
+    left: 0; 
+
+}
+
 .form-button {
-    height: 2rem;
+    text-align: center;
     border: none;
-    border-radius: 4rem;
-    width: 5rem;
+    border-radius: 2rem;
+    width: 19rem;
     background-color:#1c2A2C;color: white;
     font-family: 'Cormorant Garamond';
     letter-spacing: 2px;
     margin-top: 1rem;
+}
+
+
+.rate-button {
+    height: 4rem;
+    border: none;
+    border-radius: 2rem;
+    width: 10rem;
+    background-color:#1c2A2C;color: white;
+    font-family: 'Cormorant Garamond';
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    
 }
 
 .comment-box {
@@ -129,6 +152,20 @@
 
 }
 
+.recipe-info {
+    width: 200px;
+}
+
+.comment-parent {
+    position: relative;
+}
+.comment-child {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+}
+
+
 /*--------------------  TYPOGRAPHY STYLES -------------------*/
 
 body {
@@ -152,11 +189,6 @@ nav a {
 
 }
 
-nav .div-container {
-    padding: 0;
-    margin: 0;
-
-}
 
 #align {
     align-items: center;
@@ -216,7 +248,9 @@ h2 {
 h3 {
     font-family: 'Lexand', serif;
     font-weight: 200;
-    padding: 2rem;   
+    padding: 2rem;  
+    text-align: center; 
+    font-size: 2rem;
 }
 
 h5 {
@@ -228,10 +262,10 @@ h5 {
 }
 
 
-
+/* 
 p {
-    padding:1rem;
-}
+    padding:;
+} */
 
 img {
     max-width: 500px;
@@ -241,7 +275,7 @@ img {
 
 .bg-image {
  
-    background-size: 80%;
+    background-size: cover;
     background-position: 0px -34px;
     background-repeat: no-repeat;
     text-align: center;
