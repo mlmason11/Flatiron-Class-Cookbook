@@ -67,10 +67,11 @@
         <section id="options-container" class="grid col-3">
 
             <div id="list-options-div">
-                <select id="category" alt="Select a Meal">
-                    <option id="breakfast">BRAEKFAST</option>
-                    <option id="lunch">LUNCH</option>
-                    <option id="dinner">DINNER</option>
+                <select id="category-menu" alt="Select a Meal">
+                    <option>SELECT MEAL TYPE</option>
+                    <option id="breakfast" value="breakfast">BREAKFAST</option>
+                    <option id="lunch" value="lunch">LUNCH</option>
+                    <option id="dinner" value="dinner">DINNER</option>
                 </select>
             </div>
 
@@ -81,19 +82,27 @@
             
         </section>
 
-        <section id="recipe-card" class = "grid col-9">
-            <div id="title" class="col-12"> </div>
 
-            <div id="detail-image" class="col-6"></div>
+    
+        <section id="recipe-card" class = "grid col-9">
+          
+            <div id="title" class="col-12">        </div>
+            <div id="detail-image" class="col-6">  </div>
 
             <div id="recipe-info" class = "recipe-info col-6">
-                <div id="description"></div>
-                <div id="ingredients"></div>
-                <div id="instructions"></div>
-                <div id="allergens"></div>
-                <div id="rating"></div>
-            </div>
-        </section>
+                <div id="rating">
+                    <p id="stars"></p>
+                    <form id="rating-form">
+                        <label for="enter-rating">Your rating:</label>
+                        <input id="enter-rating" type="text" placeholder="Rate this recipe from 0-5 stars!"/>
+                        <input type="submit" value="Rate"/></button>
+                    </form>
+                </div>
+                <div id="description">   </div>
+                <div id="ingredients">   </div>
+                <div id="allergens">     </div>
+                <div id="instructions">  </div>
+          </div>
         </section>
 
 
@@ -139,8 +148,3 @@
         </footer>
     </body>
 </html>
-
-
-
-
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.lorem

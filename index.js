@@ -30,6 +30,12 @@ const instructions = document.getElementById('instructions')
 const allergens = document.getElementById('allergens')
 const rating = document.getElementById('rating')
 
+const ratingForm = document.getElementById('rating-form')
+const stars = document.getElementById('stars')
+const featuredImage = document.getElementById('featured-image')
+const categoryMenu = document.getElementById('category-menu')
+
+
 // optiona container 
 
 //const optionsContainer = document.createElement('section')
@@ -38,15 +44,41 @@ const rating = document.getElementById('rating')
 //const categorySelect = document.createElement('select')
 //listOptionsDiv.append(categorySelect)
 
+
+
+ratingForm.addEventListener('submit', e => {
+    e.preventDefault()
+    const ratingValue = e.target.value
+    if (ratingValue >= 0 && ratingValue <= 5) {
+        fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
+            'method': "PATCH",
+            'header': {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            'body': JSON.stringify({
+                'ratings': ++currentRecipe.ratings,
+                'stars': currentRecipe.stars + ratingValue
+            })   
+        }).then(response => response.json())
+        .then(data => {return(data)})
+        .catch(error => alert(error))
+    
+        stars.textContent = `${currentRecipe.stars / currentRecipe.ratings} Stars`
+    }
+    else {
+        console.log("Please enter a number between 0 and 5")
+    }
+})
+
+
 // Comments form event listener to submit comments, and add them to the database for each recipe
 commentForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('clicked')
     
-    // 
     if (e.target.value != "") {
-
-
+     
         // fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
         //     'method': "POST",
         //     'header': {
@@ -88,7 +120,7 @@ commentForm.addEventListener('submit', (e) => {
                 heart.classList.remove('fa-solid' , 'fa-heart')
                 heart.classList.add('fa-regular' , 'fa-heart')
             }
-            else if (heart){
+            else if (heart) {
                 heart.classList.contains('fa-regular' ,'fa-heart')
                 heart.classList.add('fa-solid', 'fa-heart')
             }
@@ -116,6 +148,11 @@ function populateDetails(recipeObj) {
     image.src = recipeObj.image
     detailImage.append(image)
 
+    const starNum = document.createElement('p')
+    starNum.textContent = `${recipeObj.stars / recipeObj.ratings}`
+    //stars.textContent = `${currentRecipe.stars / currentRecipe.ratings} Stars`
+    rating.prepend(starNum)
+
     const descr = document.createElement('p')
     descr.textContent = recipeObj.description
     description.append(descr)
@@ -132,9 +169,7 @@ function populateDetails(recipeObj) {
     allerg.textContent = recipeObj.allergens
     allergens.append(allerg)
 
-    const stars = document.createElement('p')
-    stars.textContent = recipeObj.rating
-    rating.append(stars)
+    
 }
 
 // Function to add one recipe to the list
@@ -155,8 +190,23 @@ function addOneRecipe(recipeObj) {
     listParent.append(recipeItem)    
 }
 
-fetch(`http://localhost:3000/recipes`)
-.then(response => response.json())
-.then(recipeArray => {
-    recipeArray.forEach(recipeObj => addOneRecipe(recipeObj))
-}).catch(error => alert(error))
+// fetch(`http://localhost:3000/recipes`)
+// .then(response => response.json())
+// .then(recipeArray => {
+//     recipeArray.forEach(recipeObj => addOneRecipe(recipeObj))
+// }).catch(error => alert(error))
+
+categoryMenu.addEventListener ('change', e => {
+    currentCategory = e.target.value
+    listParent.innerHTML=""
+    fetch(`http://localhost:3000/recipes`)
+    .then(response => response.json())
+    .then(recipeArray => {
+        
+        recipeArray.forEach(recipeObj => {
+            if (recipeObj.category === currentCategory) {
+                addOneRecipe(recipeObj)
+            }
+        })
+    }).catch(error => alert(error))
+})
