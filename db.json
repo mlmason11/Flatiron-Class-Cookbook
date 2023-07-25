@@ -1,4 +1,4 @@
-{ 
+{
   "recipes": [
     {
       "id": 1,
@@ -105,19 +105,32 @@
       "id": 24
     }
   ],
-
   "comments": [
     {
       "comment": "",
       "username": "",
       "refno": 0,
+      "likes": 0,
       "id": 1
     },
     {
       "comment": "adfadafdsf",
       "username": "adfasdf",
       "refno": 1,
+      "likes": 0,
       "id": 4
+    },
+    {
+      "comment": "aetqert",
+      "username": "sedgtaerf",
+      "refno": 1,
+      "id": 5
+    },
+    {
+      "comment": "asgfddsa",
+      "username": "asdfadsfa",
+      "refno": 1,
+      "id": 6
     }
   ]
 }
