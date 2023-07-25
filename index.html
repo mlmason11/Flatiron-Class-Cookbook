@@ -63,8 +63,8 @@
         </header>
 
 
-        <section class = "grid tall-80">
-        <section id="options-container" class="grid col-3">
+     
+        <section id="options-container" class="grid col-3 tall-80">
 
             <div id="list-options-div">
                 <select id="category-menu" alt="Select a Meal">
@@ -73,74 +73,66 @@
                     <option id="lunch" value="lunch">LUNCH</option>
                     <option id="dinner" value="dinner">DINNER</option>
                 </select>
-            </div>
-
-            <div id="recipe-list">
-                <ul id="list-parent">
-                </ul>
+                <div id="recipe-list">
+                    <ul id="list-parent">
+                    </ul>
+                </div>
             </div>
             
-        </section>
-
-
-    
-        <section id="recipe-card" class = "grid col-9">
-          
-            <div id="title" class="col-12">        </div>
-            <div id="detail-image" class="col-6">  </div>
-
-            <div id="recipe-info" class = "recipe-info col-6">
-                <div id="rating">
-                    <p id="stars"></p>
-                    <form id="rating-form">
-                        <label for="enter-rating">Your rating:</label>
-                        <input id="enter-rating" type="text" placeholder="Rate this recipe from 0-5 stars!"/>
-                        <input type="submit" value="Rate"/></button>
-                    </form>
+            <div id="detail-image" class="col-4">  </div> 
+            <div id="recipe-card" class = "col-5">
+                <div id="recipe-info" class = "recipe-info">
+                    <div id="title" class="">        </div>
+                    <div id="description">   </div>
+                    <div id="ingredients">   </div>
+                    <div id="allergens">     </div>
+                    <div id="instructions">  </div>
+                    <div id="rating">
+                        <p id="stars"></p>
+                        <form id="rating-form">
+                            <label for="enter-rating">Your rating:</label>
+                            <input id="enter-rating" type="text" placeholder="Rate this recipe from 0-5 stars!"/>
+                            <input type="submit"  class = "rate-button" value="Rate"/></button>
+                        </form>
+                    </div>
                 </div>
-                <div id="description">   </div>
-                <div id="ingredients">   </div>
-                <div id="allergens">     </div>
-                <div id="instructions">  </div>
-          </div>
+            </div>
         </section>
-
-
+            
+            
 
 
             <!--  COMMENTS SECTION  -->
             <!-- stored comments -->
     <!-- end comments section -->
-        <section id="comment-block" class="tall-70 p grid">
-            <div id="featured-image" class="col-6 bg-image"></div>
-            <div id="comments" class="col-6">
-                <div id="comment-heading" class="center">
-                    <h1>ADD COMMENTS SECTION</h1>
-                </div>
+        <section id="comment-block" class="tall-70 p grid col-12 comment-parent  padded-lg ">
+            <div id="featured-image" class="col-4 bg-image"></div>
+            <div id="comments" class="col-8 comment-child">
+                    <h3>ADD COMMENTS SECTION</h3>
                     <div id="comment-container" class="comment-container scroll">
+
                     </div>
-                </div>
             </div>
         </section>
 
                 <!-- submition form -->
-    <section>
-        <div id= "comment-box" class ="comment-box">
-            <h5> Leave Us A Comment </h5>
+    <section class ="grid col-12 tall-70">
+        <div id= "comment-box" class ="comment-box ">
+            <h3> Leave Us A Comment </h3>
             <form id= "comment-form" class="comment-form">
 
-                <input id="new-name"  type="text" placeholder="name...">
-                <textarea id="new-comment" rows="10" placeholder="leave a comment..."></textarea>
+                <input id="new-name" name="username" type="text" placeholder="name...">
+                <textarea id="new-comment" name="comment" rows="10" placeholder="leave a comment..."></textarea>
 
-                <button type="submit" class="upper form-button"> Submit</button>
+                <button type="submit" class="upper form-button">Submit</button>
             </form>
         </div>
     </section>
 
         <!-- footer section -->
-        <footer>
-            <h1> Our Food Blog </h1>
-            <nav> 
+        <footer class=" grid col-12 p-8">
+            <h1 class="col-12"> Our Food Blog </h1>
+            <nav class="col-12"> 
                 <a href="#"> Home </a>
                 <a href="#"> About </a>
                 <a href="#"> Recipes </a>
