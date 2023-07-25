@@ -51,9 +51,9 @@ categoryMenu.addEventListener ('change', e => {
     }).catch(error => alert(error))
 })
 
-ratingForm.addEventListener('submit', e => {
+// ratingForm.addEventListener('submit', e => {
     
-})
+// })
 
 
 // Comments form event listener to submit comments, and add them to the database for each recipe
@@ -142,45 +142,45 @@ function populateDetails(recipeObj) {
     allergens.append(allerg)
 
     //const s
-    const starLabel = document.createElement('label')
-    const starForm = document.createElement('form')
-    starForm.setAttribute('input')
-    starForm.addEventListener('submit', e => {
-        e.preventDefault()
-        const ratingValue = e.target.value
-        if (ratingValue >= 0 && ratingValue <= 5) {
-            fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
-                'method': "PATCH",
-                'header': {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-                'body': JSON.stringify({
-                    'ratings': ++currentRecipe.ratings,
-                    'stars': currentRecipe.stars + ratingValue
-                })   
-            }).then(response => response.json())
-            .then(newStars => {
-                stars.textContent = `${currentRecipe.stars / currentRecipe.ratings} Stars`
-                reviews.textContent = `${currentRecipe.ratings} Reviews`
-            }).catch(error => alert(error))
+    // const starLabel = document.createElement('label')
+    // const starForm = document.createElement('form')
+    // starForm.setAttribute('input')
+    // starForm.addEventListener('submit', e => {
+    //     e.preventDefault()
+    //     const ratingValue = e.target.value
+    //     if (ratingValue >= 0 && ratingValue <= 5) {
+    //         fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
+    //             'method': "PATCH",
+    //             'header': {
+    //                 'Accept': 'application/json',
+    //                 'Content-Type': 'application/json'
+    //             },
+    //             'body': JSON.stringify({
+    //                 'ratings': ++currentRecipe.ratings,
+    //                 'stars': currentRecipe.stars + ratingValue
+    //             })   
+    //         }).then(response => response.json())
+    //         .then(newStars => {
+    //             stars.textContent = `${currentRecipe.stars / currentRecipe.ratings} Stars`
+    //             reviews.textContent = `${currentRecipe.ratings} Reviews`
+    //         }).catch(error => alert(error))
         
             
-        }
-        else {
-            console.log("Please enter a number between 0 and 5")
-        }
-    })
+    //     }
+    //     else {
+    //         console.log("Please enter a number between 0 and 5")
+    //     }
+    //})
     // stars.textContent = `${currentRecipe.stars / currentRecipe.ratings} Stars`
     // stars.append(starNum)
 }
 
 // Function to add a single comment to the comment box
-function addOneComment(commentObj) {
-    const commentItem = document.createElement('p')
+// function addOneComment(commentObj) {
+//     const commentItem = document.createElement('p')
 
 
-}
+// }
 
 // Function to add one recipe to the list
 function addOneRecipe(recipeObj) {
