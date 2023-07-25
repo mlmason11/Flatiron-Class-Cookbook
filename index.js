@@ -34,8 +34,6 @@ const ratingForm = document.getElementById('rating-form')
 const stars = document.getElementById('stars')
 const featuredImage = document.getElementById('featured-image')
 const categoryMenu = document.getElementById('category-menu')
-const newName = document.querySelector('#new-name')
-const newComment = document.querySelector('#new-comment')
 
 
 // optiona container 
@@ -78,75 +76,67 @@ ratingForm.addEventListener('submit', e => {
 commentForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('clicked')
-    console.log(e.target.value)
+    
+    if (e.target.value != "") {
+     
+        // fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
+        //     'method': "POST",
+        //     'header': {
+        //         'Accept': 'applications/json',
+        //         'Content-Type': 'applications/json'
+        //     },
+        //     'body': JSON.stringify({
+        //         'comment': e.target.value
+        //     })   
+        // }).then(response => response.json())
+        // .then(data => console.log(data))
+        // .catch(error => alert(error))
 
-    if (currentRecipe.id !== undefined) {
-        fetch(`http://localhost:3000/comments`, {
-            'method': "POST",
-            'headers': {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            'body': JSON.stringify({
-                'comment': e.target.comment.value,
-                'username': e.target.username.value,
-                'refno': currentRecipe.id
-            })   
-        }).then(response => response.json())
-        .then(commentObj => console.log(commentObj))
-        .catch(error => alert(error))
-    }
-    else {
-        console.log(`Please select a recipe to comment on it`)
+        // 
+
+        const parentBlock = document.createElement('div')
+        parentBlock.className = "parent-block grid"
+        commentContainer.append(parentBlock)
+
+        //targeting selectors (name + comment)
+        const newName = document.querySelector('#new-name')
+        const newComment = document.querySelector('#new-comment')
+
+        const userName = document.createElement('small')
+        userName.textContent = newName.value
+        userName.setAttribute('class', 'user-name col-12')
+        userName.style.alignContent = 'left'
+
+        const userComment = document.createElement('p')
+        userComment.setAttribute('class', 'user-comment col-12')
+        userComment.textContent = newComment.value
+
+        const heart = document.createElement('i')
+        heart.setAttribute('class', 'heart col-12')
+        heart.classList.add('fa-regular' ,'fa-heart')
+
+        // Heart Button event listener
+        
+        heart.addEventListener('click', () => {
+            console.log('click')
+            if (heart.classList.contains('fa-solid')) {
+                heart.classList.remove('fa-solid' , 'fa-heart')
+                heart.classList.add('fa-regular' , 'fa-heart')
+            }
+            else if (heart) {
+                heart.classList.contains('fa-regular' ,'fa-heart')
+                heart.classList.add('fa-solid', 'fa-heart')
+            }
+        })
+        const userIcon =  document.createElement("div")
+        userIcon.className = "col-2"
+        
+
+        parentBlock.prepend(userName, userComment, heart, userIcon)
+
+        commentForm.reset()
     }
 })
-    
-//     function addOneComment(commentObj) {
-        
-        
-        
-//         newComment.textContent = commentObj.comment
-
-//     const parentBlock = document.createElement('div')
-//     parentBlock.className = "parent-block grid"
-//     commentContainer.append(parentBlock)
-
-//     //targeting selectors (name + comment)
-
-//     const userName = document.createElement('small')
-//     userName.textContent = newName.value
-//     userName.setAttribute('class', 'user-name col-12')
-//     userName.style.alignContent = 'left'
-
-//     const userComment = document.createElement('p')
-//     userComment.setAttribute('class', 'user-comment col-12')
-//     userComment.textContent = newComment.value
-
-//     const heart = document.createElement('i')
-//     heart.setAttribute('class', 'heart col-12')
-//     heart.classList.add('fa-regular' ,'fa-heart')
-
-//     // Heart Button event listener
-    
-//     heart.addEventListener('click', () => {
-//         console.log('click')
-//         if (heart.classList.contains('fa-solid')) {
-//             heart.classList.remove('fa-solid' , 'fa-heart')
-//             heart.classList.add('fa-regular' , 'fa-heart')
-//         }
-//         else if (heart) {
-//             heart.classList.contains('fa-regular' ,'fa-heart')
-//             heart.classList.add('fa-solid', 'fa-heart')
-//         }
-//     })
-//     const userIcon =  document.createElement("div")
-//     userIcon.className = "col-2"
-    
-
-//     parentBlock.prepend(userName, userComment, heart, userIcon)
-
-//     commentForm.reset()
-// }
 
 // Populates the recipe card with the details of the clicked recipe
 // Takes in a recipe object and uses its data to fill in the card
@@ -184,9 +174,6 @@ function populateDetails(recipeObj) {
 
     
 }
-
-
-
 
 // Function to add one recipe to the list
 function addOneRecipe(recipeObj) {

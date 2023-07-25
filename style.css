@@ -4,7 +4,7 @@
     padding: 2rem;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
     
 }
 
@@ -152,9 +152,9 @@
 
 }
 
-.recipe-info {
+/* .recipe-info {
     width: 200px;
-}
+} */
 
 .comment-parent {
     position: relative;
@@ -262,10 +262,11 @@ h5 {
 }
 
 
-/* 
+
 p {
-    padding:;
-} */
+    padding:0;
+    margin: 0;
+}
 
 img {
     max-width: 500px;
