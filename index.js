@@ -20,8 +20,8 @@ let currentCategory
 
 // global constants
 const listParent = document.getElementById('list-parent')
-const commentForm = document.getElementById('comment-form')
-const commentContainer = document.getElementById("comment-container")
+const commentForm = document.querySelector('#comment-form')
+const commentContainer = document.querySelector("#comment-container")
 const title = document.getElementById('title')
 const detailImage = document.getElementById('detail-image')
 const description = document.getElementById('description')
@@ -29,7 +29,6 @@ const ingredients = document.getElementById('ingredients')
 const instructions = document.getElementById('instructions')
 const allergens = document.getElementById('allergens')
 const rating = document.getElementById('rating')
-const featuredImage = document.getElementById('featured-image')
 
 // optiona container 
 
@@ -44,22 +43,24 @@ commentForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log('clicked')
     
+    // 
     if (e.target.value != "") {
 
 
-        fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
-            'method': "POST",
-            'header': {
-                'Accept': 'applications/json',
-                'Content-Type': 'applications/json'
-            },
-            'body': JSON.stringify({
-                'comment': e.target.value
-            })   
-        }).then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => alert(error))
+        // fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
+        //     'method': "POST",
+        //     'header': {
+        //         'Accept': 'applications/json',
+        //         'Content-Type': 'applications/json'
+        //     },
+        //     'body': JSON.stringify({
+        //         'comment': e.target.value
+        //     })   
+        // }).then(response => response.json())
+        // .then(data => console.log(data))
+        // .catch(error => alert(error))
 
+        // 
 
         const parentBlock = document.createElement('div')
         parentBlock.className = "parent-block"
@@ -98,21 +99,13 @@ commentForm.addEventListener('submit', (e) => {
 
         parentBlock.prepend(userName, userComment, heart, userIcon)
 
-        form.reset()
+        commentForm.reset()
     }
 })
 
 // Populates the recipe card with the details of the clicked recipe
 // Takes in a recipe object and uses its data to fill in the card
 function populateDetails(recipeObj) {
-    title.innerHTML=''
-    detailImage.innerHTML=''
-    description.innerHTML=''
-    ingredients.innerHTML=''
-    instructions.innerHTML=''
-    allergens.innerHTML=''
-    rating.innerHTML=''
-    
     currentRecipe = recipeObj
 
     const recipeName = document.createElement('h1')
@@ -150,6 +143,13 @@ function addOneRecipe(recipeObj) {
     recipeItem.textContent = recipeObj.name
     recipeItem.addEventListener('click', e => {
         e.preventDefault()
+        title.innerHTML=''
+        detailImage.innerHTML=''
+        description.innerHTML=''
+        ingredients.innerHTML=''
+        instructions.innerHTML=''
+        allergens.innerHTML=''
+        rating.innerHTML=''
         populateDetails(recipeObj)
     })
     listParent.append(recipeItem)    
