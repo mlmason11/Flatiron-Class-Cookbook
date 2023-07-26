@@ -10,28 +10,29 @@
 // when user submits form, comment populates comments section 
     // like button 
 
-// global variables
-let currentRecipe
-let currentCategory
-
+    
 // global constants
-const listParent = document.getElementById('list-parent')
-const commentForm = document.querySelector('#comment-form')
+const allergens = document.getElementById('allergens')
+const categoryMenu = document.getElementById('category-menu')
 const commentContainer = document.querySelector("#comment-container")
-const title = document.getElementById('title')
-const detailImage = document.getElementById('detail-image')
+const commentForm = document.querySelector('#comment-form')
 const description = document.getElementById('description')
+const detailImage = document.getElementById('detail-image')
+const featuredImage = document.getElementById('featured-image')
 const ingredients = document.getElementById('ingredients')
 const instructions = document.getElementById('instructions')
-const allergens = document.getElementById('allergens')
+const listParent = document.getElementById('list-parent')
+const newComment = document.querySelector('#new-comment')
+const newName = document.querySelector('#new-name')
 const rating = document.getElementById('rating')
 const ratingForm = document.getElementById('rating-form')
 const stars = document.getElementById('stars')
-const featuredImage = document.getElementById('featured-image')
-const categoryMenu = document.getElementById('category-menu')
-const newName = document.querySelector('#new-name')
-const newComment = document.querySelector('#new-comment')
+const title = document.getElementById('title')
 
+
+// global variables
+let currentRecipe
+let currentCategory
 
 
 function addOneComment(commentObj) {
@@ -142,11 +143,7 @@ function populateDetails(recipeObj) {
     }).catch(error => alert(error))
 }
 
-// fetch(`http://localhost:3000/recipes`)
-// .then(response => response.json())
-// .then(recipeArray => {
-//     recipeArray.forEach(recipeObj => addOneRecipe(recipeObj))
-// }).catch(error => alert(error))
+
 
 categoryMenu.addEventListener ('change', e => {
     currentCategory = e.target.value
@@ -217,3 +214,11 @@ commentForm.addEventListener('submit', e => {
 
     commentForm.reset()
 })
+
+fetch(`http://localhost:3000/recipes`)
+.then(response => response.json())
+.then(recipeArray => {
+    recipeArray.forEach(recipeObj => addOneRecipe(recipeObj))
+}).catch(error => alert(error))
+
+// Display a random recipe upon loading page
