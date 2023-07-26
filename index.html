@@ -32,12 +32,11 @@
     
     <body>
         <!-- heading section -->
-        <header >
+        <header>
                 <h1> Flatiron 
                     <h2 class = "logo-parent"> a recipe guide for foodies </h2>
                     <img class='logo' src = "assets/stock_images/logo.jpg"/>
                 </h1>
-
                 <nav class = "grid">
                     <div class = "col-6 div-container nav-a">
                         <a href="#" > Home </a>
@@ -52,22 +51,15 @@
                             <i class="fa-brands fa-facebook-f" style="color: #474b11;"></i>
                         </a>
                         <a href = "#">
-                            <i class="fa-brands fa-youtube" style="color: #474b11;"></i>  
-                        
+                            <i class="fa-brands fa-youtube" style="color: #474b11;"></i>
                         </a>
                     </div>
- 
                 </nav>
-
             </div>
         </header>
-
-<!-- 
-        /*     OPTIONS CONTAINER SECTION  */
-        <section id="options-container" class="grid tall-80">
-
-            <div id="list-options-div col-3">
-                <select id="category-menu" alt="Select a Meal">
+        <section id="options-container" class="grid">
+            <div id="list-options-div" class="col-2">
+                <select id="category-menu">
                     <option>SELECT MEAL TYPE</option>
                     <option id="breakfast" value="breakfast">BREAKFAST</option>
                     <option id="lunch" value="lunch">LUNCH</option>
@@ -75,95 +67,42 @@
                 </select>
                 <div id="recipe-list">
                     <ul id="list-parent">
+                        <!-- List of recipes go here -->
                     </ul>
                 </div>
             </div>
-<<<<<<< HEAD
-            
-            <div id="detail-image" class="col-4">  </div> 
-            <div id="recipe-card" class = "col-5">
-                <div id="recipe-info" class = "recipe-info">
-                    <div id="title" class="">
-
-=======
-            /*     RECIPE CARD SECTION */
-            <div id="recipe-card" class = "col-9">
-            <div id="title" class="col-12">        </div>
-            <div class = "grid ">
-            <div id="detail-image" class="col-2">  </div> 
-            </div>
-
-            <div class="col-10">
-            <div id="recipe-info" class = "recipe-info col-4">
-                    <div id="description">   </div>
-                    <div id="ingredients" >   </div>
-                    <div id="allergens" >     </div>
-                    <div id="instructions" >  </div>
-                    <div id="rating" >
-                        <p id="stars" ></p>
-                        <form id="rating-form">
-                            <label for="enter-rating">Your rating:</label>
-                            <input id="enter-rating" type="text" placeholder="Rate this recipe from 0-5 stars!"/>
-                            <input type="submit"  class = "rate-button" value="Rate"/></button>
-                        </form>
->>>>>>> refs/remotes/origin/main
-                    </div>
-                    <div id="description">
-
-                    </div>
-                    <div id="ingredients">
-
-                    </div>
-                    <div id="allergens">
-
-                    </div>
-                    <div id="instructions">
-
-                    </div>
-                    <div id="rating">
-                        <p><span id="stars">0</span> Stars</p>
-                        <p><span id ="reviews">0</span> Reviews</p>
-                    </div>
-                    
-                </div>
-            </div> -->
-        </section>
-
-
-        <section id="options-container" class="grid">
-            <div id="list-options-div" class="col-2">
-              <select id="category-menu">
-                <option>SELECT MEAL TYPE</option>
-                <option id="breakfast" value="breakfast">BREAKFAST</option>
-                <option id="lunch" value="lunch">LUNCH</option>
-                <option id="dinner" value="dinner">DINNER</option>
-              </select>
-              <div id="recipe-list">
-                <ul id="list-parent"></ul>
-              </div>
-            </div>
             <!-- RECIPE CARD SECTION -->
             <div id="recipe-card" class="col-10  tall-50 recipe-card">
-              <div id="title" class="col-12 center pt-2"></div>
-              <div class="grid">
-                <div id="detail-image" class="col-4 pl-8"></div>
-                <div id="recipe-info" class="col-8 pl-16 pb pt-8">
-                  <div id="description"></div>
-                  <div id="ingredients"></div>
-                  <div id="allergens"></div>
-                  <div id="instructions"></div>
-                  <div id="rating">
-                    <p id="stars"></p>
-                    <form id="rating-form">
-                      <label for="enter-rating">Your rating:</label>
-                      <input id="enter-rating" type="text" placeholder="Rate this recipe from 0-5 stars!" />
-                      <input type="submit" class="rate-button" value="Rate" />
-                    </form>
-                  </div>
+                <div id="title" class="col-12 center pt-2">
+
                 </div>
-              </div>
+                <div class="grid">
+                    <div id="detail-image" class="col-4 pl-8">
+                        <!---Image of selected recipe goes here -->
+                    </div>
+                    <div id="recipe-info" class="col-8 pl-16 pb pt-8">
+                        <div id="description">
+                            
+                        </div>
+                        <div id="ingredients">
+
+                        </div>
+                        <div id="allergens">
+
+                        </div>
+                        <div id="instructions">
+
+                        </div>
+                        <div id="rating">
+                    
+                        </div>
+                        <div id="rate-form-container">
+
+                        </div>
+                    </div>
+                </div>
             </div>
-          </section>
+        </section>
             
             
 
@@ -174,7 +113,7 @@
         <section id="comment-block" class="tall-70 grid col-12 comment-parent  padded-lg ">
             <div id="featured-image" class="col-4 bg-image"></div>
             <div id="comments" class="col-8 comment-child">
-                    <h3> COMMENTS </h3>
+                    <h3> WHAT OTHERS ARE SAYING </h3>
                     <div id="comment-container" class="comment-container scroll">
 
                     </div>
@@ -184,7 +123,12 @@
                 <!-- submition form -->
     <section class ="grid col-12 tall-70">
         <div id= "comment-box" class ="comment-box ">
-            <h3> Leave Us A Comment </h3>
+            <h3> RATE AND COMMENT </h3>
+            <!-- <form id="rating-form">
+                <label for="enter-rating">Your rating:</label>
+                <input id="enter-rating" type="number" min="0" max="5"/>
+                <input type="submit" class="rate-button" value="Rate" />
+            </form> -->
             <form id= "comment-form" class="comment-form">
 
                 <input id="new-name" name="username" type="text" placeholder="name...">

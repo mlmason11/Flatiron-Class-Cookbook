@@ -50,14 +50,12 @@
       "comment": "",
       "username": "",
       "refno": 0,
-      "likes": 0,
-      "id": 1
+      "id": 0
     },
     {
       "comment": "adfadafdsf",
       "username": "adfasdf",
       "refno": 1,
-      "likes": 0,
       "id": 4
     },
     {
@@ -70,7 +68,7 @@
       "comment": "asgfddsa",
       "username": "asdfadsfa",
       "refno": 1,
-      "id": 4
+      "id": 6
     }
   ]
 }
