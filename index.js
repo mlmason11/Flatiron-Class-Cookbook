@@ -138,17 +138,17 @@ function populateDetails(recipeObj) {
     const ratingForm = document.createElement("form");
     ratingForm.setAttribute("method", "patch");
     ratingForm.setAttribute("action" , "submit");
-
-    const ratingLabel = document.createElement('label')
-    ratingLabel.setAttribute('for', 'enter-rating')
-    ratingLabel.textContent = 'Your rating:'
-
+    
     const ratingInput = document.createElement('input')
-    ratingInput.id = 'enter-rating'
+    ratingInput.setAttribute('id', 'enter-rating')
     ratingInput.setAttribute('type', 'number')
     ratingInput.setAttribute('min', '0')
     ratingInput.setAttribute('max', '5')
     ratingInput.setAttribute('step', '0.5')
+
+    const ratingLabel = document.createElement('label')
+    ratingLabel.setAttribute('for', 'enter-rating')
+    ratingLabel.textContent = 'Your rating:'
 
     const ratingSubmit = document.createElement('input')
     ratingSubmit.setAttribute('type', 'submit')
@@ -158,7 +158,7 @@ function populateDetails(recipeObj) {
     ratingForm.append(ratingLabel, ratingInput, ratingSubmit)
     ratingForm.addEventListener('submit', e => {
         e.preventDefault()
-        fetch(`http://localhost:3000/recipes${currentRecipe.id}`, {
+        fetch(`http://localhost:3000/recipes/${currentRecipe.id}`, {
             'method': "PATCH",
             'header': {
                 'Accept': 'application/json',
@@ -166,7 +166,7 @@ function populateDetails(recipeObj) {
             },
             'body': JSON.stringify({
                 'ratings': ++currentRecipe.ratings,
-                'stars': currentRecipe.stars + e.target.value
+                'stars': currentRecipe.stars + e.target
             })
         }).then(response => response.json())
         .then(newRating => {return(newRating)})
