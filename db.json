@@ -47,58 +47,27 @@
       "comment": "",
       "username": "",
       "refno": 0,
+      "likes": 0,
       "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "comment": {},
-      "username": {},
-      "refno": 1,
-      "id": 3
     },
     {
       "comment": "adfadafdsf",
       "username": "adfasdf",
       "refno": 1,
+      "likes": 0,
       "id": 4
     },
     {
-      "comment": "afadsf",
-      "username": "adfasf",
-      "refno": 3,
+      "comment": "aetqert",
+      "username": "sedgtaerf",
+      "refno": 1,
       "id": 5
     },
     {
-      "comment": "tiffany",
-      "username": "wolterpynaffit@yahoo.com",
-      "refno": 2,
-      "id": 6
-    },
-    {
-      "comment": "adfaf",
-      "username": "afdaf",
-      "refno": 3,
-      "id": 7
-    },
-    {
-      "comment": "adfa",
-      "username": "afdafa",
-      "refno": 3,
-      "id": 8
-    },
-    {
-      "comment": "adfasfasafadf",
-      "username": "adfasfds",
-      "refno": 2,
-      "id": 9
-    },
-    {
-      "comment": "afdaf",
-      "username": "adfa",
-      "refno": 2,
-      "id": 10
+      "comment": "asgfddsa",
+      "username": "asdfadsfa",
+      "refno": 1,
+      "id": 4
     }
   ]
 }
