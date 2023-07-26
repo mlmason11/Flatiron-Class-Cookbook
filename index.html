@@ -62,11 +62,11 @@
             </div>
         </header>
 
+<!-- 
+        /*     OPTIONS CONTAINER SECTION  */
+        <section id="options-container" class="grid tall-80">
 
-     
-        <section id="options-container" class="grid col-3 tall-80">
-
-            <div id="list-options-div">
+            <div id="list-options-div col-3">
                 <select id="category-menu" alt="Select a Meal">
                     <option>SELECT MEAL TYPE</option>
                     <option id="breakfast" value="breakfast">BREAKFAST</option>
@@ -78,12 +78,35 @@
                     </ul>
                 </div>
             </div>
+<<<<<<< HEAD
             
             <div id="detail-image" class="col-4">  </div> 
             <div id="recipe-card" class = "col-5">
                 <div id="recipe-info" class = "recipe-info">
                     <div id="title" class="">
 
+=======
+            /*     RECIPE CARD SECTION */
+            <div id="recipe-card" class = "col-9">
+            <div id="title" class="col-12">        </div>
+            <div class = "grid ">
+            <div id="detail-image" class="col-2">  </div> 
+            </div>
+
+            <div class="col-10">
+            <div id="recipe-info" class = "recipe-info col-4">
+                    <div id="description">   </div>
+                    <div id="ingredients" >   </div>
+                    <div id="allergens" >     </div>
+                    <div id="instructions" >  </div>
+                    <div id="rating" >
+                        <p id="stars" ></p>
+                        <form id="rating-form">
+                            <label for="enter-rating">Your rating:</label>
+                            <input id="enter-rating" type="text" placeholder="Rate this recipe from 0-5 stars!"/>
+                            <input type="submit"  class = "rate-button" value="Rate"/></button>
+                        </form>
+>>>>>>> refs/remotes/origin/main
                     </div>
                     <div id="description">
 
@@ -103,8 +126,44 @@
                     </div>
                     
                 </div>
-            </div>
+            </div> -->
         </section>
+
+
+        <section id="options-container" class="grid">
+            <div id="list-options-div" class="col-2">
+              <select id="category-menu">
+                <option>SELECT MEAL TYPE</option>
+                <option id="breakfast" value="breakfast">BREAKFAST</option>
+                <option id="lunch" value="lunch">LUNCH</option>
+                <option id="dinner" value="dinner">DINNER</option>
+              </select>
+              <div id="recipe-list">
+                <ul id="list-parent"></ul>
+              </div>
+            </div>
+            <!-- RECIPE CARD SECTION -->
+            <div id="recipe-card" class="col-10  tall-50 recipe-card">
+              <div id="title" class="col-12 center pt-2"></div>
+              <div class="grid">
+                <div id="detail-image" class="col-4 pl-8"></div>
+                <div id="recipe-info" class="col-8 pl-16 pb pt-8">
+                  <div id="description"></div>
+                  <div id="ingredients"></div>
+                  <div id="allergens"></div>
+                  <div id="instructions"></div>
+                  <div id="rating">
+                    <p id="stars"></p>
+                    <form id="rating-form">
+                      <label for="enter-rating">Your rating:</label>
+                      <input id="enter-rating" type="text" placeholder="Rate this recipe from 0-5 stars!" />
+                      <input type="submit" class="rate-button" value="Rate" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
             
             
 
@@ -112,7 +171,7 @@
             <!--  COMMENTS SECTION  -->
             <!-- stored comments -->
     <!-- end comments section -->
-        <section id="comment-block" class="tall-70 p grid col-12 comment-parent  padded-lg ">
+        <section id="comment-block" class="tall-70 grid col-12 comment-parent  padded-lg ">
             <div id="featured-image" class="col-4 bg-image"></div>
             <div id="comments" class="col-8 comment-child">
                     <h3> COMMENTS </h3>

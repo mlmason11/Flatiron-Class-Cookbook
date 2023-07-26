@@ -205,14 +205,13 @@ commentForm.addEventListener('submit', e => {
                 'refno': currentRecipe.id
             })   
         }).then(response => response.json())
-        .then(commentObj => addOneComment(commentObj))
+        .then(commentObj => console.log(commentObj))
         .catch(error => alert(error))
     }
     else {
         console.log(`Please select a recipe to comment on it`)
     }
 
-    commentForm.reset()
 })
 
 fetch(`http://localhost:3000/recipes`)
