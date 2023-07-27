@@ -4,28 +4,29 @@
       "id": 1,
       "name": "French Omelette",
       "image": "https://images.squarespace-cdn.com/content/v1/5008a3c6c4aa6450352d2303/1559825825215-45WIYRRIQW2CSARR5LN4/IMG_20190602_133940-01.jpeg?format=2500w",
-      "description": "descripLorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.loremLorem, ipsum dolor sit amet consectetur ",
-      "ingredients": "ingredient_list",
-      "allergens": "alergen_list",
-      "steps": "steps_Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.loremLorem, ipsum dolor",
-      "cooktime": 1,
-      "servings": 1,
+      "description": "A mouthwatering French omelette, delightfully fluffy and filled with a savory blend of fresh herbs and melted cheese.",
+      "ingredients": "2 eggs | 2 tbs milk | 1 tbs unsalted butter | cheese of choice, | salt and pepper to taste",
+      "allergens": "Eggs | milk",
+      "steps": "1. Combine the eggs, milk, salt, and pepper in a medium bowl and mix very well with a fork or a whisk. | 2. Set a plate by the stove, and heat a small (about 6 inches) seasoned omelette pan or non-stick skillet over medium-high heat. | 3. Swirl the pan to distribute the butter as it melts, when  the foam subsides add the eggs, stir vigorously, add cheese in center. | 4. Hold the pan at a 45-degree angle to the stove and carefully fold the omelette. | 5. Cook just until the desired degree of doneness.",
       "category": "breakfast",
+      "preptime": 10,
+      "cooktime": 5,
+      "servings": 1,
       "stars": 0,
       "ratings": 0
     },
     {
       "id": 2,
-      "name": "One Pot Broccoli Cheddar Soup",
-      "image": "https://www.culinaryhill.com/wp-content/uploads/2022/06/The-Best-Tuna-Salad-Culinary-Hill-LR-12.jpg",
-      "description": "descriLorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.lorption",
-      "ingredients": "2 heads broccoli, ",
-      "allergens": "alergen_list",
-      "steps": "steps_liLorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.loremst",
-      "preptime": 10,
-      "cooktime": 20,
-      "servings": 1,
+      "name": "The Easy Chicken Salad Recipe You Should Know By Heart",
+      "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Chunky-Chicken-Salad-with-Grapes-and-Pecans_EXPS_FT19_152167_F_1218_1.jpg?w=1200",
+      "description": "Who doesn't love a fresh and easy chicken salad recipe? With the perfect blend of creamy and crunchy, this lunchtime staple can be enjoyed on its own, over greens or sandwiched between two slices of crusty bread. While you can buy premade varieties at the store, nothing tops the flavor of homemade chicken salad. It's also a yummy way to use up last night's leftover chicken.",
+      "ingredients": "1/2 cup mayonnaise | 2 tablespoons sour cream | 1 tablespoon lemon juice | 4 cups shredded rotisserie chicken | 1.25 cups seedless red grapes, halved | 1/2 cup chopped pecans | 1/2 cup chopped celery | salt and pepper to taste | 1/4 cup chopped sweet onion, optional | lettuce leaves or whole wheat bread slices, optional",
+      "allergens": "Eggs | dairy | tree nuts",
+      "steps": "1. Start by mixing the first five ingredients together for a creamy sauce. The sour cream and lemon juice add a tangy kick to this chunky chicken salad. Whisk together the mayonnaise, sour cream, lemon juice, salt and pepper until fully combined, tasting as you go, then set aside. | 2. In a large bowl, mix together the shredded chicken, halved red grapes, chopped pecans and chopped celery. If using onion, add it along with your mayonnaise sauce. Toss to coat. | 3. Once your chicken salad is combined, serve with fresh homemade bread, mixed greens salad or whole-grain crackers. Store leftovers in a sealed container in the refrigerator right away.",
       "category": "lunch",
+      "preptime": 15,
+      "cooktime": 2,
+      "servings": 1,
       "stars": 0,
       "ratings": 0
     },
@@ -33,14 +34,14 @@
       "id": 3,
       "name": "Thai Style Green Coconut Curry",
       "image": "https://cdn.pickuplimes.com/cache/fd/dd/fddd155daea4e59501f2d84e8c5ad6d4.jpg",
-      "description": "This curry is a spicy one! Curries can be found all over the world, but green curry originates from central Thailand. In our time travelling through Thailand, we enjoyed curries for breakfast, lunch, and dinner without ever tiring of it. The na bit of heat along with its intense and bold flavours.",
+      "description": "This curry is a spicy one! Curries can be found all over the world, but green curry originates from central Thailand. In our time travelling through Thailand, we enjoyed curries for breakfast, lunch, and dinner without ever tiring of it. Green chillies are used to create the curry paste, so it packs quite a bit of heat along with its intense and bold flavours.",
       "ingredients": "ingredient_list",
-      "allergens": "alergen_list",
-      "steps": "1/ Add the oil to a large pan on medium-high heat. When hot, add the tofu and sprinkle with salt. Cook until golden on all sides, about 8 - 10 minutes. 2/ Meanwhile, add the green broth ingredients to a blender. Blend until smooth. 3/ Add the rr to a bowl and set aside. 5/ Return the same pan to heat and add the oil. When hot, add the garlic and shallots and cook until lightly golden, about 3 minutes.",
+      "allergens": "Peanuts | tree nuts | sesame | soy | gluten",
+      "steps": "1. Add the oil to a large pan on medium-high heat. When hot, add the tofu and sprinkle with salt. Cook until golden on all sides, about 8 - 10 minutes. | 2. Meanwhile, add the green broth ingredients to a blender. Blend until smooth. | 3. Add the rice noodles to a large bowl and pour boiling water over top to submerge. Drain after 2 minutes once the noodles are al dente* and rinse under warm water. Divide the noodles into your bowls. | 4. Once the tofu is golden and crispy on all sides, transfer to a bowl and set aside. | 5. Return the same pan to heat and add the oil. When hot, add the garlic and shallots and cook until lightly golden, about 3 minutes.",
+      "category": "dinner",
       "preptime": 25,
       "cooktime": 30,
       "servings": 4,
-      "category": "dinner",
       "stars": 0,
       "ratings": 0
     }
@@ -49,28 +50,9 @@
     {
       "comment": "",
       "username": "",
+      "hearts": 0,
       "refno": 0,
-      "likes": 0,
       "id": 1
-    },
-    {
-      "comment": "adfadafdsf",
-      "username": "adfasdf",
-      "refno": 1,
-      "likes": 0,
-      "id": 4
-    },
-    {
-      "comment": "aetqert",
-      "username": "sedgtaerf",
-      "refno": 1,
-      "id": 5
-    },
-    {
-      "comment": "asgfddsa",
-      "username": "asdfadsfa",
-      "refno": 1,
-      "id": 4
     }
   ]
 }
