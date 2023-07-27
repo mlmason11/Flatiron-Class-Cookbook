@@ -38,13 +38,13 @@
                     <img class='logo' src = "assets/stock_images/logo.jpg"/>
                 </h1>
 
-                <nav class = "grid">
+                <nav class = "grid" id ="header-nav-border">
                     <div class = "col-6 div-container nav-a">
-                        <a href="#" > Home </a>
-                        <a href="#"> About </a>
-                        <a href="#"> Recipes </a>
+                        <a href="#recipe-card" > HOME </a>
+                        <a href="#comment-block"> COMMENTS </a>
+                        <a href="#comment-form"> LEAVE A COMMENT</a>
                     </div> 
-                    <div class = "col-6 right med div-container" >
+                    <div class = "social-nav  col-6 right med div-container" >
                         <a href = "#"> 
                             <i class="fa-brands fa-instagram" style="color: #474b11;"></i>
                         </a>
@@ -63,10 +63,11 @@
         </header>
 
 
-        <section id="options-container" class="grid">
+     
+        <section id="options-container" class="grid mb-16 pt-8 pr-8 bg-dark">
             <div id="list-options-div" class="col-2">
-              <select id="category-menu">
-                <option>SELECT MEAL TYPE</option>
+              <select id="category-menu"  class = 'form-button '>
+                <option >SELECT MEAL TYPE</option>
                 <option id="breakfast" value="breakfast">BREAKFAST</option>
                 <option id="lunch" value="lunch">LUNCH</option>
                 <option id="dinner" value="dinner">DINNER</option>
@@ -76,7 +77,7 @@
               </div>
             </div>
             <!-- RECIPE CARD SECTION -->
-            <div id="recipe-card" class="col-10  tall-50 recipe-card">
+            <div id="recipe-card" class="col-10 tall-50 recipe-card bg-featured">
               <div id="title" class="col-12 center pt-2"></div>
               <div class="grid">
                 <div id="detail-image" class="col-4 pl-8"></div>
@@ -85,11 +86,19 @@
                   <div id="ingredients"></div>
                   <div id="allergens"></div>
                   <div id="instructions"></div>
-                  <div id="rating"></div>
+                  <div id="rating">
+                    <p id="stars"></p>
+                    <form id="rating-form">
+                      <label for="enter-rating">Your rating:</label>
+                      <input id="enter-rating" type="text" placeholder="Rate this recipe from 0-5 stars!" />
+                      <input type="submit" class="rate-button" value="Rate" />
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
+            
             
             
 
@@ -97,10 +106,10 @@
             <!--  COMMENTS SECTION  -->
             <!-- stored comments -->
     <!-- end comments section -->
-        <section id="comment-block" class="tall-70 grid col-12 comment-parent  padded-lg ">
+        <section id="comment-block" class="tall-70 p grid col-12 comment-parent  mb-16 padded-lg ">
             <div id="featured-image" class="col-4 bg-image"></div>
             <div id="comments" class="col-8 comment-child">
-                    <h3> COMMENTS </h3>
+                    <h3>ADD COMMENTS SECTION</h3>
                     <div id="comment-container" class="comment-container scroll">
 
                     </div>
@@ -108,9 +117,9 @@
         </section>
 
                 <!-- submition form -->
-    <section class ="grid col-12 tall-70">
+    <section class ="grid col-12 tall-70  bg-dark">
         <div id= "comment-box" class ="comment-box ">
-            <h3> Leave Us A Comment </h3>
+            <h3 class = "mt-8"> Leave Us A Comment </h3>
             <form id= "comment-form" class="comment-form">
 
                 <input id="new-name" name="username" type="text" placeholder="name...">
