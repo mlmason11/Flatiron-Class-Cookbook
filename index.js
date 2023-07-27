@@ -159,14 +159,14 @@ function populateDetails(recipeObj) {
     ratingForm.addEventListener('submit', e => {
         e.preventDefault()
         fetch(`http://localhost:3000/recipes/${currentRecipe.id}`, {
-            'method': "PATCH",
-            'header': {
+            method: "PATCH",
+            header: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            'body': JSON.stringify({
-                'ratings': ++currentRecipe.ratings,
-                'stars': currentRecipe.stars + e.target
+            body: JSON.stringify({
+                ratings: ++recipeObj.ratings,
+                stars: recipeObj.stars + e.target
             })
         }).then(response => response.json())
         .then(newRating => {return(newRating)})
