@@ -11,121 +11,50 @@
       "cooktime": 1,
       "servings": 1,
       "category": "breakfast",
-      "rating": 0
+      "preptime": 10,
+      "cooktime": 5,
+      "servings": 1,
+      "stars": 0,
+      "ratings": 0
     },
     {
       "id": 2,
-      "name": "One Pot Broccoli Cheddar Soup",
-      "image": "https://www.culinaryhill.com/wp-content/uploads/2022/06/The-Best-Tuna-Salad-Culinary-Hill-LR-12.jpg",
-      "description": "descriLorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.loremLorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.loremLorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.loremption",
-      "ingredients": "2 heads broccoli, ",
-      "allergens": "alergen_list",
-      "steps": "steps_liLorem, ipsum dolor sit amet consectetur adipisicing elit. Eius nostrum optio blanditiis quod necessitatibus quasi similique autem iste cum impedit iure facere possimus, ratione error molestiae nobis recusandae mollitia! Quia.loremst",
-      "preptime": 10,
-      "cooktime": 20,
-      "servings": 1,
+      "name": "The Easy Chicken Salad Recipe You Should Know By Heart",
+      "image": "https://www.milkandhoneynutrition.com/wp-content/uploads/2021/09/Chicken-salad-with-grapes-and-walnuts-1-scaled.jpeg",
+      "description": "Who doesn't love a fresh and easy chicken salad recipe? With the perfect blend of creamy and crunchy, this lunchtime staple can be enjoyed on its own, over greens or sandwiched between two slices of crusty bread. While you can buy premade varieties at the store, nothing tops the flavor of homemade chicken salad. It's also a yummy way to use up last night's leftover chicken.",
+      "ingredients": "1/2 cup mayonnaise | 2 tablespoons sour cream | 1 tablespoon lemon juice | 4 cups shredded rotisserie chicken | 1 + 1/4 cups seedless red grapes, halved | 1/2 cup chopped pecans | 1/2 cup chopped celery | salt and pepper to taste | 1/4 cup chopped sweet onion, optional | lettuce leaves or whole wheat bread slices, optional",
+      "allergens": "Eggs | dairy | tree nuts",
+      "steps": "1. Start by mixing the first five ingredients together for a creamy sauce. The sour cream and lemon juice add a tangy kick to this chunky chicken salad. Whisk together the mayonnaise, sour cream, lemon juice, salt and pepper until fully combined, tasting as you go, then set aside. | 2. In a large bowl, mix together the shredded chicken, halved red grapes, chopped pecans and chopped celery. If using onion, add it along with your mayonnaise sauce. Toss to coat. | 3. Once your chicken salad is combined, serve with fresh homemade bread, mixed greens salad or whole-grain crackers. Store leftovers in a sealed container in the refrigerator right away.",
       "category": "lunch",
-      "rating": 0
+      "preptime": 15,
+      "cooktime": 2,
+      "servings": 1,
+      "stars": 0,
+      "ratings": 0
     },
     {
       "id": 3,
       "name": "Thai Style Green Coconut Curry",
       "image": "https://cdn.pickuplimes.com/cache/fd/dd/fddd155daea4e59501f2d84e8c5ad6d4.jpg",
-      "description": "This curry is a spicy one! Curries can be found all over the world, but green curry originates from central Thailand. In our time travelling through Thailand, we enjoyed curries for breakfast, lunch, and dinner without ever tiring of it. The name 'green' curry comes from the colour of the dish, as green chillies are used to create the curry paste, so it packs quite a bit of heat along with its intense and bold flavours.This curry is a spicy one! Curries can be found all over the world, but green curry originates from central Thailand. In our time travelling through Thailand, we enjoyed curries for breakfast, lunch, and dinner without ever tiring of it. The name 'green' curry comes from the colour of the dish, as green chillies are used to create the curry paste, so it packs quite a bit of heat along with its intense and bold flavours.",
+      "description": "This curry is a spicy one! Curries can be found all over the world, but green curry originates from central Thailand. In our time travelling through Thailand, we enjoyed curries for breakfast, lunch, and dinner without ever tiring of it. Green chillies are used to create the curry paste, so it packs quite a bit of heat along with its intense and bold flavours.",
       "ingredients": "ingredient_list",
-      "allergens": "alergen_list",
-      "steps": "1/ Add the oil to a large pan on medium-high heat. When hot, add the tofu and sprinkle with salt. Cook until golden on all sides, about 8 - 10 minutes. 2/ Meanwhile, add the green broth ingredients to a blender. Blend until smooth. 3/ Add the rice noodles to a large bowl and pour boiling water over top to submerge. Drain after 2 minutes once the noodles are al dente* and rinse under warm water. Divide the noodles into your bowls. 4/ Once the tofu is golden and crispy on all sides, transfer to a bowl and set aside. 5/ Return the same pan to heat and add the oil. When hot, add the garlic and shallots and cook until lightly golden, about 3 minutes.",
+      "allergens": "Peanuts | tree nuts | sesame | soy | gluten",
+      "steps": "1. Add the oil to a large pan on medium-high heat. When hot, add the tofu and sprinkle with salt. Cook until golden on all sides, about 8 - 10 minutes. | 2. Meanwhile, add the green broth ingredients to a blender. Blend until smooth. | 3. Add the rice noodles to a large bowl and pour boiling water over top to submerge. Drain after 2 minutes once the noodles are al dente* and rinse under warm water. Divide the noodles into your bowls. | 4. Once the tofu is golden and crispy on all sides, transfer to a bowl and set aside. | 5. Return the same pan to heat and add the oil. When hot, add the garlic and shallots and cook until lightly golden, about 3 minutes.",
+      "category": "dinner",
       "preptime": 25,
       "cooktime": 30,
       "servings": 4,
-      "category": "dinner",
-      "rating": 0
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
-      "id": 17
-    },
-    {
-      "id": 18
-    },
-    {
-      "id": 19
-    },
-    {
-      "id": 20
-    },
-    {
-      "id": 21
-    },
-    {
-      "id": 22
-    },
-    {
-      "id": 23
-    },
-    {
-      "id": 24
+      "stars": 0,
+      "ratings": 0
     }
   ],
   "comments": [
     {
       "comment": "",
       "username": "",
+      "hearts": 0,
       "refno": 0,
       "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "comment": {},
-      "username": {},
-      "refno": 1,
-      "id": 3
-    },
-    {
-      "comment": "adfadafdsf",
-      "username": "adfasdf",
-      "refno": 1,
-      "id": 4
     }
   ]
 }
