@@ -2,7 +2,7 @@
 // when meal type is selected, recipies list will render in recipie container
 
 // when receipe is clicked, populates card with receipe details and image
-
+//
 // when user submits form, comment populates comments section 
 
 // global constants
