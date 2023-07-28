@@ -1,9 +1,4 @@
-// create a dropdown menu using select and options tags to feature meal types.
-// when meal type is selected, recipies list will render in recipie container
 
-// when receipe is clicked, populates card with receipe details and image
-//
-// when user submits form, comment populates comments section 
 
 // global constants
 const allergens = document.getElementById('allergens')
@@ -142,7 +137,8 @@ function addOneRecipe(recipeObj) {
     listParent.append(recipeItem)    
 }
 
-
+// create a dropdown menu using select and options tags to feature meal types.
+// when meal type is selected, recipies list will render in recipie container
 categoryMenu.addEventListener ('change', e => {
     currentCategory = e.target.value
     //console.log(currentCategory)
@@ -160,6 +156,7 @@ categoryMenu.addEventListener ('change', e => {
 
 
 // Comments form event listener to submit comments, and add them to the database for each recipe
+// When user submits form, comment populates comments section 
 commentForm.addEventListener('submit', e => {
     e.preventDefault()
     //console.log('clicked')
